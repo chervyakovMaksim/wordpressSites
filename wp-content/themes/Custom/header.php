@@ -19,15 +19,15 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class( $class ) ?>>
 
 
     <header class="container-fluid">
         <div class="row">
-            <div class="container">
+            <div class="container header_container">
                 <div class="row">
                     <div class="col-lg-2 for_logo">
-                        <a href="#" class="">
+                        <a href="<?php echo get_home_url(); ?>" class="">
                             <img src="<?php echo $tpl_dir ?>/img/logo.svg" alt="" class="">
                         </a>
                     </div>

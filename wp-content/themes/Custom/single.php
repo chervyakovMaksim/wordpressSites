@@ -7,7 +7,6 @@
 
 <?php get_header(); ?>
 
-<!-- Test -->
 
 <div class="container">
     <div class="row">

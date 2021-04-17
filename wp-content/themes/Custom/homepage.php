@@ -30,4 +30,14 @@
     </div>
 </div>
 
+<div class="container second_screen">
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- <?php echo do_shortcode('[product columns="1" id="38"]'); ?> -->
+            <?php echo do_shortcode('[product_category category="Uncategorized"]') ?>
+            <?php echo do_shortcode('[product_category category="man-watch"]') ?>
+        </div>
+    </div>
+</div>
+
 <?php get_footer(); ?>
