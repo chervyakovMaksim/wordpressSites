@@ -52,6 +52,21 @@ table {
   border-spacing: 0;
 }
 
+/* CUSTOMIZE SCROLL BAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #444240;
+}
+
+/* ____________________ */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
