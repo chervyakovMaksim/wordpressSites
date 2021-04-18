@@ -32,10 +32,11 @@
 
 <div class="container second_screen">
     <div class="row">
-        <div class="col-lg-12">
-            <!-- <?php echo do_shortcode('[product columns="1" id="38"]'); ?> -->
-            <?php echo do_shortcode('[product_category category="Uncategorized"]') ?>
-            <?php echo do_shortcode('[product_category category="man-watch"]') ?>
+        <div class="col-lg-4">
+            <?php echo do_shortcode('[product columns="1" id="' . get_field('secodn_screen_product1') . '"]'); ?>
+        </div>
+        <div class="col-lg-8">
+        <?php echo do_shortcode('[product columns="1" id="' . get_field('secodn_screen_product2') . '"]'); ?>
         </div>
     </div>
 </div>
