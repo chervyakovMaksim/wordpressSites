@@ -1,7 +1,4 @@
-// $('header').addClass('scrolled_header');
 let header_height = $('header').height();
-
-console.log(header_height);
 
 $('body').css('padding-top', header_height);
 

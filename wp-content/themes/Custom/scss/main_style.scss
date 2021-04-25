@@ -191,3 +191,17 @@ header {
         }
     }
 }
+
+.section_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 43px;
+    color: #1B1A17;
+    text-align: center;
+}
+.second_screen {
+    margin-top: 50px;
+    .section_title {
+        margin-bottom: 50px;
+    }
+}

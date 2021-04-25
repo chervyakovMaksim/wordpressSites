@@ -281,4 +281,20 @@ header .right_side_header div {
 .first_screen .main_screen_product .size:after {
   right: calc(100% + 15px);
 }
+
+.section_title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+  text-align: center;
+}
+
+.second_screen {
+  margin-top: 50px;
+}
+
+.second_screen .section_title {
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=main_style.css.map */

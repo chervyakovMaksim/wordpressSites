@@ -1,7 +1,7 @@
 <?php $tpl_dir = get_template_directory_uri(); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="icon" href="<?php echo $tpl_dir ?>/img/favicon.ico" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="<?php echo $tpl_dir ?>/css/main_style.css"> -->
     <title>CONQUEST / <?php the_title(); ?></title>
 
     <?php wp_head(); ?>
