@@ -32,12 +32,45 @@
 
 <div class="container second_screen">
     <div class="row">
-        <div class="col-lg-4">
-            <?php echo do_shortcode('[product columns="1" id="' . get_field('secodn_screen_product1') . '"]'); ?>
+        <div class="col-12">
+            <h2 class="section_title"><?php the_field('second_screen_title'); ?></h2>
+        </div>
+    </div>
+    <div class="row">
+        <?php
+            $recommendet_products = get_field('popular_products_main_page');
+            $count_products = count($recommendet_products); 
+            for ( $i = 0; $i < $count_products; $i++ ) {
+                if ($i == 0) {
+                    ?>
+                        <div class="col-lg-4">
+                            <?php echo do_shortcode('[product columns="1" id="' . $recommendet_products[$i] . '"]'); ?>
+                        </div>
+                    <?php
+                }
+                if ( $i == 1 ) {
+                    ?>
+                        <div class="col-lg-8">
+                            <?php echo do_shortcode('[product columns="1" id="' . $recommendet_products[$i] . '"]'); ?>
+                        </div>
+                    <?php
+                }
+                if ( $i > 1 )
+                {
+                    ?>
+                        <div class="col-lg-6">
+                            <?php echo do_shortcode('[product columns="1" id="' . $recommendet_products[$i] . '"]'); ?>
+                        </div>
+                    <?php
+                }
+            }
+        ?>
+        <!-- <div class="col-lg-4">
+            <?php # echo do_shortcode('[product columns="1" id="' . get_field('secodn_screen_product1') . '"]'); ?>
         </div>
         <div class="col-lg-8">
-        <?php echo do_shortcode('[product columns="1" id="' . get_field('secodn_screen_product2') . '"]'); ?>
-        </div>
+            <?php # echo do_shortcode('[product columns="1" id="' . get_field('secodn_screen_product2') . '"]'); ?>
+        </div> -->
     </div>
 </div>
 
