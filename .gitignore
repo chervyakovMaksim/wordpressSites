@@ -6,6 +6,8 @@ wp-content/themes/twentytwenty
 wp-content/themes/twentytwentyone
 wp-includes
 index.php
+!wp-content/themes/index.php
+!wp-content/themes/Custom/index.php
 license.txt
 readme.html
 wp-activate.php
